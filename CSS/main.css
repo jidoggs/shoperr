@@ -1,0 +1,640 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+:root {
+  --headline-colo: #2ec89e;
+  --selected-nav-colo: #1ca47f;
+  --primary-btn-colo: #1fc5a5;
+  --primary-colo1: #fff;
+  --dash-back-colo: #f2f2f2;
+  --dash-font-colo: #606b78;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 18.75px;
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F5F5F5;
+  padding: 21px 0;
+}
+
+header img {
+  padding-right: 10px;
+}
+
+header span {
+  color: var(--headline-colo);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+header p {
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.container {
+  width: 1128px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: var(--primary-colo1);
+  color: #333333;
+}
+
+div,
+ul,
+li,
+a,
+nav {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.16px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 9px 34px;
+  -webkit-box-shadow: 0px 4px 10px 0px #00000026;
+          box-shadow: 0px 4px 10px 0px #00000026;
+  border-radius: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: var(--primary-btn-colo);
+  color: var(--primary-colo1);
+}
+
+.btn-white {
+  color: var(--headline-colo);
+  background-color: var(--primary-colo1);
+  border: solid 1px var(--primary-colo1);
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+  font-weight: 700;
+}
+
+.btn-white:hover {
+  background-color: var(--headline-colo);
+  color: var(--primary-colo1);
+  border: solid 1px var(--primary-colo1);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards .coupon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--primary-colo1);
+  -webkit-box-shadow: 0px 4px 25px 0px #0000001a;
+          box-shadow: 0px 4px 25px 0px #0000001a;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.cards .coupon:last-child {
+  margin-right: 0;
+}
+
+.cards .coupon .details h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  color: #259bd6;
+}
+
+.cards .coupon .details p {
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #999999;
+}
+
+.cards .coupon .details .btndash {
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+
+.cards .coupon .details .btndash .btn-card {
+  padding: 8px 18px !important;
+  border: solid var(--primary-btn-colo) 2px;
+  z-index: 2;
+}
+
+.cards .coupon .details .btndash .btn-dash {
+  position: absolute;
+  background-color: var(--dash-back-colo);
+  border-radius: 36px;
+  padding: 8px 16px 8px 150px !important;
+  color: var(--dash-font-colo);
+  border: dashed var(--primary-btn-colo) 2px;
+  right: -12px;
+  bottom: 0;
+  z-index: -2;
+}
+
+.header {
+  background-color: var(--headline-colo);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
+.header .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 241px auto;
+      grid-template-columns: 241px auto;
+  place-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--primary-colo1);
+}
+
+.header .container a {
+  color: var(--primary-colo1);
+}
+
+.header .container .logo {
+  font-size: 22px;
+  line-height: 25.78px;
+  font-weight: 700;
+}
+
+.header .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .container nav ul li {
+  padding: 16px;
+}
+
+.header .container nav ul li:nth-child(2) {
+  background-color: var(--selected-nav-colo);
+}
+
+.amazon .container {
+  padding-bottom: 44px;
+  position: relative;
+}
+
+.amazon .container .slider {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.amazon .container .slider__green {
+  content: "";
+  width: 15px;
+  height: 6px;
+  border-radius: 11px;
+  background-color: var(--headline-colo);
+  margin-right: 7px;
+  position: relative;
+}
+
+.amazon .container .slider__green::before {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 11px;
+  content: "";
+  background-color: #999999;
+  right: -23px;
+  bottom: 0;
+}
+
+.amazon .container .slider__green::after {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 11px;
+  content: "";
+  background-color: #999999;
+  right: -33px;
+  bottom: 0;
+}
+
+.amazon .container .slider__gray {
+  height: 6px;
+  width: 6px;
+  border-radius: 11px;
+  content: "";
+  background-color: #999999;
+  position: relative;
+}
+
+.amazon .container .slider__gray::before {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 11px;
+  content: "";
+  background-color: #999999;
+  right: -30px;
+  bottom: 0;
+}
+
+.amazon .container h3 {
+  padding-top: 60px;
+  padding-bottom: 43px;
+  width: 604px;
+}
+
+.amazon .container h3 span {
+  color: var(--headline-colo);
+  font-size: 30px;
+  line-height: 35.16px;
+}
+
+.amazon .container .cards .coupon {
+  margin-right: 30px;
+}
+
+.amazon .container .cards .coupon:last-child {
+  margin-right: 0;
+}
+
+.amazon .container .cards .coupon img {
+  padding: 20px;
+}
+
+.amazon .container .cards .coupon .details {
+  padding: 19px 28px 26px 0;
+}
+
+.amazon .container .cards .coupon .details .btndash {
+  padding-top: 11px;
+}
+
+.amazon .container .cards .coupon .details .btndash .btn-card-deal {
+  padding: 8px 30px;
+  border: solid var(--primary-btn-colo) 2px;
+  -webkit-box-shadow: 0px 4px 10px 0px #00000026;
+          box-shadow: 0px 4px 10px 0px #00000026;
+}
+
+.best .container {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.best .container h3 {
+  padding-bottom: 51px;
+  padding-top: 54px;
+}
+
+.best .container .cards .coupon {
+  display: block;
+  position: relative;
+  margin-right: 30px;
+}
+
+.best .container .cards .coupon:last-child {
+  margin-right: 0;
+}
+
+.best .container .cards .coupon img {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.best .container .cards .coupon .details {
+  padding: 86px 20.1px 20px 21px;
+}
+
+.best .container .cards .coupon .details p {
+  padding: 8px 0 16px 0;
+}
+
+.best .container .cards .coupon .details .btndash {
+  right: -6px;
+}
+
+.best .container .cards .coupon .details .btndash .btn-dash {
+  right: 10px;
+}
+
+.saving {
+  overflow-x: hidden;
+  background: #eaf6f9;
+  padding: 90px 0 88px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.saving::before {
+  position: absolute;
+  content: "";
+  background: url(/img/Group12.svg);
+  width: 53%;
+  height: 80%;
+  top: 66px;
+  left: 665px;
+  right: 417.98px;
+  bottom: 93.34px;
+  z-index: -1;
+}
+
+.saving::after {
+  position: absolute;
+  content: "";
+  background: url(/img/Group13.svg) repeat;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.saving .container {
+  width: 1004px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.saving .container .video {
+  content: "";
+  width: 443px;
+  height: 321px;
+  border-radius: 10px;
+  background-color: #b3d4dc;
+  position: relative;
+  margin-right: 51px;
+}
+
+.saving .container .video::before {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  content: "";
+  border-radius: 60px;
+  background-color: var(--primary-colo1);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 4px 20px 0px #0000000d;
+          box-shadow: 0px 4px 20px 0px #0000000d;
+  cursor: pointer;
+}
+
+.saving .container .video:after {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  content: "";
+  background-color: var(--primary-btn-colo);
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.saving .container .details {
+  display: block;
+  width: 509px;
+  padding-top: 10px;
+}
+
+.saving .container .details .btn {
+  display: inline-block;
+}
+
+.saving .container .details h2 {
+  padding: 25.54px 0 17px 0;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 40px;
+}
+
+.saving .container .details h2 span {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.saving .container .details p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 13px;
+}
+
+.latest .container {
+  padding-bottom: 114px;
+}
+
+.latest .container h3 {
+  padding: 63px 0 51px 0;
+  text-align: center;
+}
+
+.latest .container .blues h6 {
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.latest .container .blues p {
+  font-size: 12px;
+  line-height: 14.06px;
+  font-weight: 400;
+}
+
+.latest .container .blues .discount {
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #333333;
+  padding: 9px 0 8px 0;
+  font-weight: 400;
+}
+
+.latest .container .cards {
+  display: block;
+}
+
+.latest .container .cards .coupon {
+  margin-right: 0;
+  margin-bottom: 30px;
+}
+
+.latest .container .cards .coupon:last-child {
+  margin-bottom: 0;
+}
+
+.latest .container .cards .coupon img {
+  padding: 20px 32px 21px 20px;
+}
+
+.latest .container .cards .coupon .details {
+  position: relative;
+}
+
+.latest .container .cards .coupon .details .blues {
+  padding-top: 29px;
+  display: block;
+}
+
+.latest .container .cards .coupon .details .greens {
+  padding-top: 33px;
+  padding-right: 66.66px;
+  position: absolute;
+  right: -577px;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  display: block;
+}
+
+.latest .container .cards .coupon .details .greens .btndash {
+  position: absolute;
+  right: 23px;
+}
+
+.latest .container .cards .coupon .details .greens .btndash .btn-card {
+  position: absolute;
+  left: 4px;
+}
+
+.latest .container .cards .coupon .details .greens .btndash .btn-dash {
+  position: relative;
+}
+
+.latest .container .cards .coupon .details .greens p {
+  padding-top: 61px;
+  color: var(--primary-btn-colo);
+  font-size: 16px;
+  position: relative;
+  left: 52px;
+}
+
+.latest .container .cards .coupon .details .greens .saved {
+  color: var(--primary-colo1);
+}
+
+.latest .container .cards .coupon .details .blues,
+.latest .container .cards .coupon .details .greens {
+  float: left;
+}
+
+footer {
+  background: #2E3F50;
+  color: var(--primary-colo1);
+}
+
+footer .container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .top .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  width: 440px;
+  font-weight: 400;
+}
+
+footer .container .top .left a {
+  font-size: 22px;
+  font-weight: 700;
+  padding-right: 67px;
+  color: var(--primary-colo1);
+}
+
+footer .container .top .right {
+  padding-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .container .top .right .socials {
+  padding-top: 15px;
+}
+
+footer .container .top .right .socials img {
+  padding-right: 8.65px;
+  cursor: pointer;
+}
+
+footer .container .top .right .socials img:last-child {
+  padding-right: 0;
+}
+
+footer .copyright {
+  margin-top: 38px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16.41px;
+  border-top: solid 1px #516273;
+  padding: 21px 0 20px 0;
+}
+/*# sourceMappingURL=main.css.map */
